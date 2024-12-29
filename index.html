@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delish Recipes</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .hero
+    {
+      background-color: rgb(161, 68, 68);
+    }
+    .hey
+    {  padding: 20px 20px;
+      background-color: rgb(240, 159, 159);
+       text-align: center;
+      color: rgb(2, 2, 2);
+      position: relative;
+     
+     
+      background-size: 100% 100%;
+    }
+    /* Style for Home Button */
+    #home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: none; /* Hidden by default */
+    }
+    #home-button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <header class="hey">
+      <h1>Indian Authentic Recipe</h1>
+    </header>
+  </center>
+  <!-- Header Section -->
+  <header class="hero">
+    
+    <nav class="navbar">
+      <div class="logo">😋...YUMMY..😋</div>
+      <ul class="nav-links">
+        <li><u><a href="#breakfast">Breakfast</a></u></li>
+        <li><u><a href="#lunch">Lunch</a></u></li>
+        <li><u><a href="#dinner">Dinner</a></u></li>
+        <li><u><a href="#snacks">Snacks</a></u></li>
+        <!-- Added Link to Recipe Details -->
+        <li><u><a href="recipe.html">All Recipes</a></u></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Delightful Recipes for Every Meal</h1>
+      <p>Explore and create dishes that satisfy your taste buds.</p>
+      <div class="search-bar">
+        <input type="text" id="search-bar" placeholder="Search for recipes...">
+        <button onclick="searchRecipes()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breakfast Section -->
+  <section id="breakfast" class="recipe-section">
+    <h2>Breakfast Recipes</h2>
+    <p>Quick, light, and often high-energy dishes to kickstart the day.</p>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/poha.jpg" alt="Poha">
+        <h3>Poha</h3>
+        <p>A light and fluffy dish with peanuts and spices.</p>
+        <p><a href="https://youtu.be/LAcFkm5Soq8?si=cCx3vUmKCIRqXSUr" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/idli.jpg" alt="Idli">
+        <h3>Idli</h3>
+        <p>Soft, fluffy, and healthy South Indian dish.</p>
+        <p><a href="https://youtu.be/dcMlG1UA-jU?si=eDmCtCHw5-_FYk-s" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/dosa.jpg" alt="Dosa">
+        <h3>Dosa</h3>
+        <p>Thin, crispy crepes served with chutney and sambar.</p>
+        <p><a href="https://youtu.be/rJSICjc5s84?si=vJMbwvTiDXg0QfwH" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/upma.jpg" alt="upma">
+        <h3>Upma</h3>
+        <p>A wholesome, savory breakfast.</p>
+        <p><a href="https://youtu.be/zpMqTRadZXM?si=m-Z5IBIk30VHbq92" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Aloo paratha.jpg" alt="paratha">
+        <h3>Aloo Paratha</h3>
+        <p>Hearty and filling, usually paired with curd.</p>
+        <p><a href="https://youtu.be/j3pDXY9fqSo?si=WcL_24acveoIpr7Y" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Thepla.jpg" alt="thepla">
+        <h3>Thepla</h3>
+        <p>A light, spiced flatbread, great for breakfast or snacks.</p>
+        <p><a href="https://youtu.be/l-6wWsZoFpE?si=JRMg10uFWD2W273X" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lunch Section -->
+  <section id="lunch" class="recipe-section">
+    <h2>Lunch Recipes</h2>
+    <p>Balanced meals often including rice, bread, vegetables, and dals.</p>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/biryani.jpg" alt="Vegetable Biryani">
+        <h3>Vegetable Biryani</h3>
+        <p>A fragrant rice dish with layers of vegetables and spices.</p>
+        <p><a href="https://youtu.be/gYE9zOmJwsg?si=pK5NHKB8IG5jwWnT" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/palak-paneer.jpg" alt="Palak Paneer">
+        <h3>Palak Paneer</h3>
+        <p>Paneer cooked in a creamy spinach gravy.</p>
+        <p><a href="https://youtu.be/5lVLxEr_qgM?si=mu4aKmM7TbnkySCH" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/rajma.jpg" alt="Rajma">
+        <h3>Rajma</h3>
+        <p>A hearty curry served with rice.</p>
+        <p><a href="https://youtu.be/e7N93e5dKtM?si=W0yyDLMiFziMs1tc" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Sambar.jpg" alt="Sambar">
+        <h3>Sambar</h3>
+        <p>A tangy and spicy South Indian lentil dish.</p>
+        <p><a href="https://youtu.be/peF9ha21rP4?si=nFhPGr9cg3QySxef" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Chole.jpg" alt="Chole ">
+        <h3>Chole</h3>
+        <p>Rich chickpea curry best enjoyed with rice or roti.</p>
+        <p><a href="https://youtu.be/qPiqvDltIdM?si=_yMHUV4nFf2vC_cB" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Aloo Gobi.jpg" alt="Aloo Gobi  ">
+        <h3>Aloo Gobi </h3>
+        <p>A dry, spiced vegetable curry.</p>
+        <p><a href="https://youtu.be/PhgyyJE90w8?si=dUiBV_qkHTmHO3mD" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dinner Section -->
+  <section id="dinner" class="recipe-section">
+    <h2>Dinner Recipes</h2>
+    <p>Light and often comfort-driven dishes for winding down the day.</p>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p>A creamy tomato-based curry.</p>
+        <p><a href="https://youtu.be/a30BLUQiFoc?si=z6vGLz0OfxZ-TgD_" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/baingan-bharta.jpg" alt="Baingan Bharta">
+        <h3>Baingan Bharta</h3>
+        <p>Smoky mashed eggplant cooked with spices.</p>
+        <p><a href="https://youtu.be/Q39faQ4j2sQ?si=GrynND6Z5l0-i6aE" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/dal-tadka.jpg" alt="Dal Tadka">
+        <h3>Dal Tadka</h3>
+        <p>Lentils cooked with tempered spices.</p>
+        <p><a href="https://youtu.be/2u3H7JoAm_U?si=JWGPxY8lc8juHYx0" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Bhindi Masala.jpg" alt="Bhindi Masala">
+        <h3>Bhindi Masala</h3>
+        <p>A simple yet flavorful dry sabzi.</p>
+        <p><a href="https://youtu.be/s0T9sm1DGoU?si=ey2PJG4T3OIMG-VZ" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Kadhi Pakora.jpg" alt="Kadhi Pakora ">
+        <h3>Kadhi Pakora </h3>
+        <p>A tangy and comforting curry with gram flour fritters.</p>
+        <p><a href="https://youtu.be/zucwY4pw2Rk?si=eHC2Sxl4O1VoF1dd" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Vegetable Pulao.jpg" alt="Vegetable Pulao">
+        <h3>Vegetable Pulao</h3>
+        <p>A simple one-pot rice dish with mild spices.</p>
+        <p><a href="https://youtu.be/WSthHkamGlM?si=Hra_Sg5JeXhsAORH" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Snacks Section -->
+  <section id="snacks" class="recipe-section">
+    <h2>Snacks Recipes</h2>
+    <p>Great for evenings or as accompaniments.</p>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/samosa.jpg" alt="Samosa">
+        <h3>Samosa</h3>
+        <p>Crispy pastry filled with spiced potato and peas.</p>
+        <p><a href="https://youtu.be/EKPAfUCn_Jo?si=2xYp1spLc9oIfFdX" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/pani-puri.jpg" alt="Pani Puri">
+        <h3>Pani Puri</h3>
+        <p>Crispy puris filled with spicy and tangy water.</p>
+        <p><a href="https://youtu.be/fOu3wB0Inx8?si=rnFPsosrEf3ZKVPg" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/dhokla.jpg" alt="Dhokla">
+        <h3>Dhokla</h3>
+        <p>A light and fluffy Gujarati snack.</p>
+        <p><a href="https://youtu.be/Vu3HHOfK53A?si=RFOKfWJ-VbQdP7G9" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Pakoras.jpg" alt="Pakoras">
+        <h3>Pakoras</h3>
+        <p>Crispy fritters made with gram flour batter.</p>
+        <p><a href="https://youtu.be/ibzQobIsG4k?si=mqyBJOsnR0zv4sl3" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Masala Chai.jpg" alt="Masala Chai ">
+        <h3>Masala Chai </h3>
+        <p>India's favorite tea with spices.</p>
+        <p><a href="https://youtu.be/2KI-PGM7PYQ?si=d9aWG0xGBYlkTKP_" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Pav Bhaji.jpg" alt="Pav Bhaji">
+        <h3>Pav Bhaji</h3>
+        <p>A spicy mashed vegetable curry served with buttered bread rolls.</p>
+        <p><a href="https://youtu.be/FnXzNmwtQeg?si=-x-_Y1YoDGLan50R" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Vada Pav.jpg" alt="Vada Pav">
+        <h3>Vada Pav</h3>
+        <p>Mumbai's iconic street food featuring a spicy potato fritter in a bun.</p>
+        <p><a href="https://youtu.be/lrAzNrre5oo?si=f4uwU-tuzEe65IrC" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Kachori.jpg" alt="Kachori">
+        <h3>Kachori</h3>
+        <p>Deep-fried pastry with spiced lentil or potato filling.</p>
+        <p><a href="https://youtu.be/7Mz63qPbiZw?si=ohNKPhahRmJlPBq9" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Aloo Tikki.jpg" alt="Aloo Tikki">
+        <h3>Aloo Tikki</h3>
+        <p>Crispy potato patties often served with chutney or curd.</p>
+        <p><a href="https://youtu.be/wAApJ327T9s?si=8DMZ2roSV0FGWHRU" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Chaat.jpg" alt="Chaat ">
+        <h3>Chaat </h3>
+        <p>A tangy and spicy mix of ingredients like boiled potatoes, chickpeas, chutneys, and sev.</p>
+        <p><a href="https://youtu.be/ewgy8XMDz88?si=DkH1vNWRJ7Yrgf5v" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Bhel Puri.jpg" alt="Bhel Puri">
+        <h3>Bhel Puri</h3>
+        <p>A puffed rice snack mixed with tangy chutneys and spices.</p>
+        <p><a href="https://youtu.be/KqkN5afjGzQ?si=D5plu6b_3Q9vTbU_" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Bread Pakora.jpg" alt="Bread Pakora">
+        <h3>Bread Pakora</h3>
+        <p>Bread slices coated in a spiced gram flour batter and deep-fried.</p>
+        <p><a href="https://youtu.be/nnRdFlBtF2Y?si=-jfzCJqofNLjEhEX" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Hara Bhara Kabab.jpg" alt="Hara Bhara Kabab">
+        <h3>Hara Bhara Kabab</h3>
+        <p>Healthy and flavorful patties made with spinach, peas, and potatoes.</p>
+        <p><a href="https://youtu.be/5de_BWIBnGk?si=RsLvbPckm0zci0P" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Masala Vada.jpg" alt="Masala Vada">
+        <h3>Masala Vada</h3>
+        <p>Crispy fritters made from spiced chana dal.</p>
+        <p><a href="https://youtu.be/8CzLWsSdHv4?si=w-_6P2Ex4lu9I48Z" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Mirchi Bajji.jpg" alt="Mirchi Bajji ">
+        <h3>Mirchi Bajji </h3>
+        <p>Large green chilies stuffed with spiced filling and deep-fried.</p>
+        <p><a href="https://youtu.be/Bq13NfBy_0Q?si=iM-AL3cBR2ZxAtnf" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Sabudana Vada.jpg" alt="Sabudana Vada">
+        <h3>Sabudana Vada</h3>
+        <p>A crispy snack made with tapioca pearls, perfect for fasting days.</p>
+        <p><a href="https://youtu.be/RoA3-XqKr-Y?si=jd2y8UMQLgZ8IZHJ" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Dahi Puri.jpg" alt="Dahi Puri">
+        <h3>Dahi Puri</h3>
+        <p>Crispy puris filled with curd, chutneys, and spices.</p>
+        <p><a href="https://youtu.be/exPCcP5PdSc?si=4dOY9nFckI4HV6aF" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/Vegetable Cutlets.jpg" alt="Vegetable Cutlets">
+        <h3>Vegetable Cutlets</h3>
+        <p>Pan-fried or deep-fried patties made with vegetables and spices.</p>
+        <p><a href="https://youtu.be/kaBo82iYW68?si=H-GdMFetaYuc5zrW" target="_blank">Watch Recipe on YouTube</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Taste them once again</p>
+  </footer>
+    <!-- Home Button -->
+    <button id="home-button" onclick="scrollToTop()">↑</button>
+
+    <script>
+      // Function to scroll to the top
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+  
+      // Show the Home Button when scrolling down
+      window.onscroll = function () {
+        const homeButton = document.getElementById('home-button');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          homeButton.style.display = 'block';
+        } else {
+          homeButton.style.display = 'none';
+        }
+      };
+    </script>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

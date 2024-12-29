@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    background-color: #4CAF50;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #FF5733;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Recipe Table Section */
+  .recipe-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .recipe-table th,
+  .recipe-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1.5rem;
+  }
+  
+  .recipe-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.6rem;
+  }
+  
+  .recipe-table td {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1.4rem;
+  }
+  
+  .recipe-table td a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .recipe-table td a:hover {
+    color: #FF5733;
+    text-decoration: underline;
+  }
+  
+  /* Recipe Detail Sections */
+  #poha, #idli, #dosa, #upma, #paratha, #thepla,
+  #biryani, #palak, #aloo-gobi, #rajma, #sambar, #chole,
+  #paneer-butter, #bhindi-masala, #kadhi, #baingan, #pulao, #dal-tadka,
+  #pakoras, #pani-puri, #masala-chai, #samosa, #dhokla {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+  }
+  
+  #poha h3, #idli h3, #dosa h3, #upma h3, #paratha h3, #thepla h3,
+  #biryani h3, #palak h3, #aloo-gobi h3, #rajma h3, #sambar h3, #chole h3,
+  #paneer-butter h3, #bhindi-masala h3, #kadhi h3, #baingan h3, #pulao h3, #dal-tadka h3,
+  #pakoras h3, #pani-puri h3, #masala-chai h3, #samosa h3, #dhokla h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #poha p, #idli p, #dosa p, #upma p, #paratha p, #thepla p,
+  #biryani p, #palak p, #aloo-gobi p, #rajma p, #sambar p, #chole p,
+  #paneer-butter p, #bhindi-masala p, #kadhi p, #baingan p, #pulao p, #dal-tadka p,
+  #pakoras p, #pani-puri p, #masala-chai p, #samosa p, #dhokla p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Add padding to recipe sections */
+  #poha p, #idli p, #dosa p, #upma p, #paratha p, #thepla p,
+  #biryani p, #palak p, #aloo-gobi p, #rajma p, #sambar p, #chole p,
+  #paneer-butter p, #bhindi-masala p, #kadhi p, #baingan p, #pulao p, #dal-tadka p,
+  #pakoras p, #pani-puri p, #masala-chai p, #samosa p, #dhokla p {
+    padding: 10px 0;
+  }
+  
+  /* Hover effect for the recipe name links */
+  .recipe-table td a:hover {
+    text-decoration: underline;
+    color: #FF5733;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 768px) {
+    .recipe-table th, .recipe-table td {
+      font-size: 1.3rem;
+      padding: 12px;
+    }
+  
+    .recipe-table td a {
+      font-size: 1.4rem;
+    }
+  
+    #poha p, #idli p, #dosa p, #upma p, #paratha p, #thepla p,
+    #biryani p, #palak p, #aloo-gobi p, #rajma p, #sambar p, #chole p,
+    #paneer-butter p, #bhindi-masala p, #kadhi p, #baingan p, #pulao p, #dal-tadka p,
+    #pakoras p, #pani-puri p, #masala-chai p, #samosa p, #dhokla p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* For Small Screens */
+  @media (max-width: 480px) {
+    .recipe-table th, .recipe-table td {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .recipe-table td a {
+      font-size: 1.2rem;
+    }
+  
+    #poha p, #idli p, #dosa p, #upma p, #paratha p, #thepla p,
+    #biryani p, #palak p, #aloo-gobi p, #rajma p, #sambar p, #chole p,
+    #paneer-butter p, #bhindi-masala p, #kadhi p, #baingan p, #pulao p, #dal-tadka p,
+    #pakoras p, #pani-puri p, #masala-chai p, #samosa p, #dhokla p {
+      font-size: 1.1rem;
+    }
+  }
+  

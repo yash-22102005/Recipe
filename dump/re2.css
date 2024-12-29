@@ -1,0 +1,259 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #444;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #ff6347;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar input {
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+    font-size: 1.2rem;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .search-bar input:focus {
+    border-color: #ff6347;
+  }
+  
+  .search-bar button {
+    padding: 12px 24px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Recipe Section */
+  .recipe-section {
+    padding: 50px 20px;
+  }
+  
+  .recipe-section h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .recipe-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .recipe-card h3 {
+    margin: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ff6347;
+  }
+  
+  .recipe-card p {
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Recipe Table */
+  .recipe-table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+  }
+  
+  .recipe-table th, .recipe-table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .recipe-table th {
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .recipe-table td {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .recipe-table td:first-child {
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .recipe-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+  }
+  
+  .recipe-table .breakfast {
+    background-color: #f8d7da;
+  }
+  
+  .recipe-table .lunch {
+    background-color: #d4edda;
+  }
+  
+  .recipe-table .dinner {
+    background-color: #cce5ff;
+  }
+  
+  .recipe-table .snacks {
+    background-color: #fff3cd;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+  
+  .footer a {
+    color: #ff6347;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .recipe-card {
+      width: calc(50% - 20px);
+    }
+  
+    .recipe-table th, .recipe-table td {
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .search-bar input {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .recipe-card {
+      width: 100%;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  
+    .recipe-table th, .recipe-table td {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
